@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Kinobilletter</title>
+</head>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form class="form">
+                <div class="form-group">
+                    <label for="film">Velg film:</label>
+                    <select id="film" class="form-control" onchange="validerFilm()">
+                    <option value="">Velg film</option>
+                        <option value="Black Widow">Black Widow</option>
+                        <option value="Avengers Endgame">Avengers Endgame</option>
+                        <option value="Scarlet Witch">Scarlet Witch</option>
+                    </select>
+                    <span id="feilFilm" style="color: red"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="antall">Antall:</label>
+                    <input type="number" class="form-control" id="antall" min="1" oninput="validerAntall()"/>
+                    <span id="feilAntall" style="color: red"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="fornavn">Fornavn:</label>
+                    <input type="text" class="form-control" id="fornavn" onchange="validerFornavn(this.value)"/>
+                    <span id="feilFornavn" style="color: red"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="etternavn">Etternavn:</label>
+                    <input type="text" class="form-control" id="etternavn" onchange="validerEtternavn(this.value)"/>
+                    <span id="feilEtternavn" style="color: red"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefonnr">Tlf:</label>
+                    <input type="tel" class="form-control" id="telefonnr" onchange="validerTelenfonnr(this.value)"/>
+                    <span id="feilTelefonnr" style="color: red"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" autocomplete="email" onchange="validerEmail(this.value)"/>
+                    <span id="feilEmail" style="color: red"></span>
+                </div>
+            </form>
+
+            <button class="btn btn-primary" onclick="kjopBilletter()">Kjøp billetter</button>
+        </div>
+
+        <div class="col-md-8">
+        <h2>Alle billetter</h2>
+            <div id="billettRegister" class="table-responsive"></div>
+            <button class="btn btn-danger" onclick="slettBilletter()">Slett alle billettene</button>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
