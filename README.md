@@ -1,10 +1,10 @@
-Kinobillettbestillingssystem
+# **Kinobillettbestillingssystem**
 
 Dette prosjektet er et enkelt kinobillettbestillingssystem som lar brukere bestille kinobilletter og lagre dem i en database. 
 Systemet lar brukerne velge en film, angi antall billetter, og oppgi personlig informasjon som fornavn, etternavn, telefonnummer og e-postadresse. 
 Etter at brukeren har lagt inn billettinformasjonen, kan de fullføre bestillingen, og billettene blir lagret i en database for videre administrasjon.
 
-Funksjoner:
+## Funksjoner:
 - Filmvalg: Brukere kan velge fra en liste over tilgjengelige filmer, inkludert "Black Widow", "Avengers Endgame", og "Scarlet Witch".
 - Antall billetter: Brukere kan angi antall billetter de ønsker å bestille for den valgte filmen. 
 - Personlig informasjon: Brukere må oppgi personlig informasjon, inkludert fornavn, etternavn, telefonnummer og e-postadresse, for å fullføre bestillingen.
@@ -15,7 +15,7 @@ Funksjoner:
 - Sletting av billetter: Det er også en funksjon for å slette alle billetter fra databasen, noe som er nyttig for administrasjon og vedlikehold.
 
 
-Teknologier brukt:
+## Teknologier brukt:
 - HTML
 - CSS (Bootstrap)
 - JavaScript (jQuery)
