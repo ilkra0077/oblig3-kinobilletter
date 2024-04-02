@@ -22,3 +22,12 @@ Etter at brukeren har lagt inn billettinformasjonen, kan de fullføre bestilling
 - Java
 - Database: H2 Database 
 
+
+## Link til YouTube-video:
+- https://youtu.be/QQO6wpBjZXA 
+
+
+## Forfatter
+- Oslomet brukernavn: ilkra0077
+- Github brukernavn: ilkra0077
+- Fullt navn: Ilirijana Krasniqi
